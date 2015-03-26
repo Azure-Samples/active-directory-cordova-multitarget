@@ -1,6 +1,6 @@
 # NativeClient-MultiTarget-Cordova
 
-Sample demonstrates the use of the ADAL plugin for [Apache Cordova](https://cordova.apache.org/) to build an Apache Cordova app that calls a web API that requires Authentication based on Azure AD. For more information about how the protocols work in this scenario and other scenarios, see [Authentication Scenarios for Azure AD](http://go.microsoft.com/fwlink/?LinkId=394414).
+This sample demonstrates the usage of the ADAL plugin for [Apache Cordova](https://cordova.apache.org/) to build an Apache Cordova app that calls a web API that requires Authentication based on Azure AD. For more information about how the protocols work in this scenario and other scenarios, see [Authentication Scenarios for Azure AD](http://go.microsoft.com/fwlink/?LinkId=394414).
 
 ADAL plugin for Apache Cordova is an open source library.  For distribution options, source code, and contributions, check out the ADAL Cordova repo at https://github.com/AzureAD/azure-activedirectory-library-for-cordova.
 
@@ -17,7 +17,7 @@ To run this sample you will need:
 Every Azure subscription has an associated Azure Active Directory tenant.  If you don't already have an Azure subscription, you can get a free subscription by signing up at [http://www.windowsazure.com](http://www.windowsazure.com).  All of the Azure AD features used by this sample are available free of charge.
 
 ### TODO: steps to register Azure AD Tenant and set up local test server
-https://github.com/AzureADSamples/NativeClient-iOS
+https://github.com/AzureADSamples/NativeClient-iOS#step-2-download-and-run-either-the-net-or-nodejs-rest-api-todo-sample-server
 
 ### Step 1:  Clone or download this repository
 
