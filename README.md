@@ -44,10 +44,20 @@ From your shell or command line:
   `cordova plugin add ../azure-activedirectory-library-for-cordova`
 
 ### Step 4:  Configure the sample to use your Azure Active Directory tenant
- TODO
-  
+ 1. Open the `www/js/app.js` file inside created `ADALSample` folder.
+ 2. Replace `config` information with your Web API settings.
+```javascript
+window.config = {
+    // TODO: for each field: detailed description what does it mean and where to find a replacement
+    tenant: 'cordovaadalsample.onmicrosoft.com',
+    clientId: '4fa5ca88-f92e-456f-af10-12ee535c42d6',
+    postLogoutRedirectUri: 'http://TodoListClient',
+    endpoint = 'http://localhost:9184'
+};  
+```
+
 ### Step 5:  Run the sample
-    `cordova run`
+  `cordova run`
 
 ## About the Code
 
