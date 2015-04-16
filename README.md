@@ -50,7 +50,7 @@ Platform specific development tools depending on platform(s) you want to run sam
   Install [Android SDK](http://developer.android.com/sdk/installing/index.html?pkg=tools) and add `<android-sdk-location>\tools` location (for example, C:\tools\Android\android-sdk\tools) to your `PATH` Environment Variable.
 
   Open Android SDK Manager (for example, via terminal: `android`) and install 
-    - *Android 5.0.1 (API 21)* platform SDK
+    - *Android 5.1.1 (API 22)* platform SDK
     - *Android SDK Build-tools* version 19.1.0 or higher
     - *Android Support Repository* (Extras)
     
@@ -95,9 +95,9 @@ __Note__: Whitelist plugin is required to access Graph API via XMLHttpRequests (
 
 ### Step 5: Add the platforms you want to support
 
-`cordova platform add android@97718a0a25ec50fedf7b023ae63bfcffbcfafb4b`
+`cordova platform add android@4.0.0`
 
-__Note__: We specify custom Android platform version here since we require some functionality which is not released yet. This will be updated after Cordova for Android version 4.x release.
+__Note__: We use specific Android platform version here since we require some functionality which is not released yet. This will be updated soon after Cordova Tools release.
 
 `cordova platform add ios`
 
