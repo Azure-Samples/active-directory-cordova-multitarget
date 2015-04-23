@@ -20,7 +20,7 @@ Following the instructions in the sections below, you'll see that those same two
 To run this sample you will need:
 
 - An Internet connection
-- A Windows 8.1 64-bit machine with minimum 4 GB of RAM if you want to run Windows Table/PC apps. Processor that supports [ Client Hyper-V and Second Level Address Translation (SLAT)] (https://msdn.microsoft.com/en-us/library/windows/apps/ff626524(v=vs.105).aspx#hyperv) is also required if you want to run Windows Phone 8.1 app on emulator.
+- A Windows 8.1 64-bit machine with minimum 4 GB of RAM if you want to run Windows Table/PC apps. Processor that supports [ Client Hyper-V and Second Level Address Translation (SLAT)](https://msdn.microsoft.com/en-us/library/windows/apps/ff626524(v=vs.105).aspx#hyperv) is also required if you want to run Windows Phone 8.1 app on emulator.
 - A Mac OSX 10.8.5/Mountain Lion or higher machine with 4 GB of RAM if you want to run iOS app.
 - To run Android app you can choose among
   - Mac OSX 10.8.5/Mountain Lion or higher machine with 4 GB of RAM 
@@ -54,7 +54,7 @@ Platform specific development tools depending on platform(s) you want to run sam
     - *Android SDK Build-tools* version 19.1.0 or higher
     - *Android Support Repository* (Extras)
     
-  Android sdk doesn't provide any default emulator instance. Create a new one by running `android avd` from terminal and then selecting *Create...* if you want to run Android app on emulator. Recommended *Api Level* is 19 or higher, see [AVD Manager] (http://developer.android.com/tools/help/avd-manager.html) for more information about Android emulator and creation options.
+  Android sdk doesn't provide any default emulator instance. Create a new one by running `android avd` from terminal and then selecting *Create...* if you want to run Android app on emulator. Recommended *Api Level* is 19 or higher, see [AVD Manager](http://developer.android.com/tools/help/avd-manager.html) for more information about Android emulator and creation options.
 
 ### Step 1: [Optional] Register the sample with your Azure Active Directory tenant
 
@@ -95,9 +95,7 @@ __Note__: Whitelist plugin is required to access Graph API via XMLHttpRequests (
 
 ### Step 5: Add the platforms you want to support
 
-`cordova platform add android@4.0.0`
-
-__Note__: We use specific Android platform version here since we require some functionality which is not released yet. This will be updated soon after Cordova Tools release.
+`cordova platform add android`
 
 `cordova platform add ios`
 
