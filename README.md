@@ -35,7 +35,8 @@ Platform specific development tools depending on platform(s) you want to run sam
 
 - To build and run Windows Tablet/PC or Phone app version
 
-  [Visual Studio 2013 for Windows with Update 2 or later](http://www.visualstudio.com/downloads/download-visual-studio-vs#d-express-windows-8) (Express or another version).
+  [Visual Studio 2013 with Update 5 for Windows](http://www.visualstudio.com/downloads/download-visual-studio-vs#d-express-windows-8) (Express or another version) or
+[Visual Studio 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs#d-community) (Community or another version)
 
 - To build and run for iOS
 
@@ -100,15 +101,6 @@ __Note__: Whitelist plugin is required to access Graph API via XMLHttpRequests (
 `cordova platform add ios`
 
 `cordova platform add windows`
-
-__Note__: In case if you have a Visual Studio 2015 Preview installed you may have issues with project packaging for Windows related to MSBuild v.14 issue.
-You can workaround this issue by using patched cordova-windows with MSBuild reverted to v.12:
-
-* Instead of `cordova platform add windows` use
-* `cd ..`
-* `git clone -b msbuild14-issue https://github.com/MSOpenTech/cordova-windows`
-* `cd ADALSample`
-* `cordova platform add ..\cordova-windows`
 
 ### Step 6:  Add plugin to your cordova app
   `cordova plugin add ../azure-activedirectory-library-for-cordova`
