@@ -1,3 +1,9 @@
+---
+services:
+platforms:
+author: azure
+---
+
 # NativeClient-MultiTarget-Cordova
 
 This sample demonstrates the usage of the ADAL plugin for [Apache Cordova](https://cordova.apache.org/) to build an Apache Cordova app that calls a web API that requires Authentication based on Azure AD. 
