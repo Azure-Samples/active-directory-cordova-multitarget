@@ -1,7 +1,7 @@
 ---
-services:
-platforms:
-author: azure
+services: active-directory
+platforms: javascript
+author: dstrockis
 ---
 
 # Integrating an Apache Cordova app with Azure AD
