@@ -1,7 +1,7 @@
 ---
 services: active-directory
 platforms: javascript
-author: dstrockis
+author: vibronet
 ---
 
 # Integrating an Apache Cordova app with Azure AD
