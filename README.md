@@ -84,7 +84,7 @@ This step is optional - the sample is configured to run with any tenant out of t
 ### Step 2:  Clone or download this repository
 
 From your shell or command line:
-`git clone https://github.com/AzureADSamples/NativeClient-MultiTarget-Cordova.git`
+`git clone https://github.com/Azure-Samples/active-directory-cordova-multitarget.git`
 
 ### Step 3:  Clone or download ADAL for Apache Cordova plugin
 
