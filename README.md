@@ -69,17 +69,15 @@ To use this sample you will need a Microsoft Azure Active Directory Tenant. If y
 
 This step is optional - the sample is configured to run with any tenant out of the box. But for best understanding, we recommend completing these two steps and registering the application in your own tenant.
 
-1. Sign in to the Azure management portal.
-2. Click on Active Directory in the left hand nav.
-3. Click the directory tenant where you wish to register the sample application.
-4. Click the Applications tab.
-5. In the drawer, click Add.
-6. Click "Add an application my organization is developing".
-7. Enter a friendly name for the application, for example "DirectorySearcherClient", select "Native Client Application", and click next.
-8. Enter a Redirect Uri value of your choosing and of form http://MyDirectorySearcherApp. NOTE: there are certain platform specific features that can only be leveraged by using Redirect Uri values in specific formats. We will add guidance about this soon. 
-9. While still in the Azure portal, click the Configure tab of your application.
-10. Find the Client ID value and copy it aside, you will need this later when configuring your application.
-11. In the Permissions to Other Applications configuration section, ensure that "Access your organization's directory" and "Enable sign-on and read user's profiles" are selected under "Delegated permissions" for Azure Active Directory. Save the configuration.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. On the top bar, click on your account and under the **Directory** list, choose the Active Directory tenant where you wish to register your application.
+2. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
+3. Click on **Registered Applications** and choose **Add**.
+4. Enter a friendly name for the application, for example 'DirectorySearcherClient' and select 'Native' as the Application Type. For the redirect URI, enter something like `http://MyDirectorySearcherApp`. Click on **Create** to create the application. NOTE: there are certain platform specific features that can only be leveraged by using Redirect Uri values in specific formats. We will add guidance about this soon. 
+5. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
+6. Find the Application ID value and copy it to the clipboard.
+7. Configure Permissions for your application - in the Settings menu, choose the 'Required permissions' section, click on **Add**, then **Select an API**, and select 'Microsoft Graph' (this is the Graph API). Then, click on  **Select Permissions** and select 'Read Directory Data' and 'Sign in and read user profile'.
+
 
 ### Step 2:  Clone or download this repository
 
@@ -115,7 +113,7 @@ __Note__: Whitelist plugin is required to access Graph API via XMLHttpRequests (
 This step is not strictly required. It shows you how to reflect the registration settings you obtained in step 1, if you decided that you want to use your own application entry in your directory tenant.
   
  1. Open the `index.js` file inside created `ADALSample/www/js/` folder.
- 2. Find the clientId variable and replace its value with the Client Id assigned to your app from the Azure portal.
+ 2. Find the clientId variable and replace its value with the Application Id assigned to your app from the Azure portal.
  3. Find the redirectUri variable and replace the value with the redirect Uri you registerd in the Azure portal.
 
 ```javascript
