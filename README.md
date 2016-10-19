@@ -91,8 +91,14 @@ From your shell or command line:
 
 ### Step 4: Create new Apache Cordova application
 
-`cordova create ADALSample --copy-from="active-directory-cordova-multitarget\DirSearchClient"`
+`cordova create ADALSample`
 `cd ADALSample`
+
+Copy sample application files from 'active-directory-cordova-multitarget/DirSearchClient' directory to your app's 'www' directory using file manager or the following commands:
+
+ - On Windows: `xcopy ..\active-directory-cordova-multitarget\DirSearchClient www /E /Y`
+
+ - On Mac OS and Linux: `cp -r  ../active-directory-cordova-multitarget/DirSearchClient/* www`
 
 ### Step 5: Add the platforms you want to support
 
