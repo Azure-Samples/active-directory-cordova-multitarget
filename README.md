@@ -117,7 +117,7 @@ This step is not strictly required. It shows you how to reflect the registration
  3. Find the redirectUri variable and replace the value with the redirect Uri you registerd in the Azure portal.
 
 ```javascript
-  var authority = "https://login.windows.net/common",
+  var authority = "https://login.microsoftonline.com/common",
     redirectUri = "http://MyDirectorySearcherApp",
     resourceUri = "https://graph.windows.net",
     clientId = "a5d92493-ae5a-4a9f-bcbf-9f1d354067d3",
